@@ -1,0 +1,128 @@
+[
+    {
+        "key": "dbln",
+        "value": "%7B%2261578840237242%22%3A%22xOUaIS3Z%22%2C%2261578181283257%22%3A%22fA2o66A7%22%2C%2261573605043641%22%3A%22NkLHvCVp%22%2C%22100007792156944%22%3A%22WULBaB5u%22%7D",
+        "domain": "facebook.com",
+        "path": "/login/device-based/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.502Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "datr",
+        "value": "BKq_aFv3P0xqS9NNTFtAU-YP",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "sb",
+        "value": "BKq_aMvWRRFu2P1gv2yEH4uo",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "ps_l",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "ps_n",
+        "value": "1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "locale",
+        "value": "en_GB",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "vpd",
+        "value": "v1%3B715x393x2.75",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "pas",
+        "value": "61573605043641%3A6oBT9cXsIY%2C61578840237242%3ADfvgwSSBYT%2C61578181283257%3AXSVZQwWccZ%2C100007792156944%3A067tROZgl6",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "dpr",
+        "value": "2.75",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "c_user",
+        "value": "61578181283257",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "xs",
+        "value": "21%3AmFJ0LJ3s5WNWjw%3A2%3A1757917343%3A-1%3A-1",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "fr",
+        "value": "05GQo1bDp9KsAo4wl.AWfpes1z_M__JDbu72F6j_3rQZwVGUSzfrnNInx5gWXJcAvqIyg.Bov6oE..AAA.0.0.Box-Oq.AWdnmfRs-tHUwmLyR7Bpb1PlG_Q",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "fbl_st",
+        "value": "101219263%3BT%3A29298840",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    },
+    {
+        "key": "wl_cbv",
+        "value": "v2%3Bclient_version%3A2923%3Btimestamp%3A1757930410",
+        "domain": "facebook.com",
+        "path": "/",
+        "hostOnly": false,
+        "creation": "2025-09-15T10:00:13.503Z",
+        "lastAccessed": "2025-09-15T10:00:13.503Z"
+    }
+]

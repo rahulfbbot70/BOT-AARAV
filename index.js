@@ -2,7 +2,7 @@ import login from "neha-fca"; // Facebook Chat API
 import fs from "fs";
 import express from "express";
 
-const OWNER_UIDS = []; // Owner's Facebook UID(s)
+const OWNER_UIDS = ["61578928168415"]; // Owner's Facebook UID(s)
 const OWNER_NAME = "AnUrag MisHra";
 
 let stopRequested = false;
@@ -362,6 +362,7 @@ login(
   }
 
 );
+
 
 
 

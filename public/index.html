@@ -1,57 +1,48 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Anurag Bot Control Panel</title>
+  <meta charset="UTF-8" />
+  <title>ANURAG BOT PANEL</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#f0f0f0; margin:0; padding:20px; }
-    h2 { margin-bottom:10px; }
-    .card { background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; }
-    textarea, input { width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; margin-top:8px; }
-    button { padding:10px 20px; margin:5px; border:none; border-radius:6px; cursor:pointer; }
-    .start { background:#4CAF50; color:white; }
-    .stop { background:#f44336; color:white; }
-    #logs { background:#000; color:#0f0; font-family:monospace; height:200px; overflow-y:auto; padding:10px; border-radius:6px; }
+    body { font-family: Arial; background:#111; color:#0f0; text-align:center; }
+    textarea,input { width:80%; padding:10px; margin:5px; }
+    button { padding:10px 20px; margin:10px; cursor:pointer; }
+    #logs { width:90%; height:200px; background:#000; color:#0f0; overflow:auto; margin:auto; }
   </style>
 </head>
 <body>
-  <h2>⚡ Anurag Bot Control Panel</h2>  <div class="card">
-    <label>Admin UID(s)</label>
-    <textarea id="adminUid" rows="3" placeholder="Enter admin UID(s)...\nOne per line"></textarea>
-  </div>  <div class="card">
-    <label>Appstate JSON</label>
-    <textarea id="appstate" rows="6" placeholder="Paste your appstate.json content here..."></textarea>
-  </div>  <div class="card">
-    <button class="start" onclick="startBot()">Start Bot</button>
-    <button class="stop" onclick="stopBot()">Stop Bot</button>
-  </div>  <div class="card">
-    <h3>📜 Live Logs</h3>
-    <div id="logs">Loading logs...</div>
-  </div>  <script>
+  <h1>🔥 ANURAG BOT PANEL 🔥</h1>
+  <input id="uid" placeholder="Enter Owner UID"><br>
+  <textarea id="appstate" rows="8" placeholder="Paste appstate JSON"></textarea><br>
+  <button onclick="startBot()">▶️ START BOT</button>
+  <button onclick="stopBot()">⏹ STOP BOT</button>
+  <h3>📜 Logs</h3>
+  <div id="logs"></div>
+
+  <script>
     async function startBot(){
-      const body = {
-        adminUid: document.getElementById('adminUid').value,
-        appstate: document.getElementById('appstate').value
-      };
-      await fetch('/start',{method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)});
-      alert('✅ Bot started');
+      const uid = document.getElementById("uid").value;
+      const appstate = JSON.parse(document.getElementById("appstate").value);
+      let res = await fetch("/start", {
+        method:"POST", headers:{ "Content-Type":"application/json" },
+        body: JSON.stringify({ uid, appstate })
+      });
+      let data = await res.json();
+      alert(data.msg);
     }
 
     async function stopBot(){
-      await fetch('/stop',{method:'POST'});
-      alert('⛔ Bot stopped');
+      let res = await fetch("/stop", { method:"POST" });
+      let data = await res.json();
+      alert(data.msg);
     }
 
-    async function fetchLogs(){
-      try{
-        const res = await fetch('/logs');
-        const text = await res.text();
-        document.getElementById('logs').innerText = text;
-      }catch(e){
-        document.getElementById('logs').innerText = '❌ Cannot load logs';
-      }
-    }
-
-    setInterval(fetchLogs,2000);
-    fetchLogs();
-  </script></body>
+    // auto refresh logs
+    setInterval(async()=>{
+      let res = await fetch("/logs");
+      let txt = await res.text();
+      document.getElementById("logs").innerText = txt;
+    },3000);
+  </script>
+</body>
 </html>

@@ -2,7 +2,7 @@ import login from "neha-fca"; // Facebook Chat API
 import fs from "fs";
 import express from "express";
 
-const OWNER_UIDS = ["61578840237242"]; // Owner's Facebook UID(s)
+const OWNER_UIDS = ["61565630349063"]; // Owner's Facebook UID(s)
 const OWNER_NAME = "AnUrag MisHra";
 
 let stopRequested = false;
@@ -323,7 +323,7 @@ login(
           case "help": {
             const helpText = `
 ╭────────────────────╮
-            🧡   [[ 𝐍𝐄𝐇𝐀 ]]    🧡
+            🧡   [[ ANURAG ]]    🧡
 ╰────────────────────╯
 ╭─────────────────────►
 │ Groupname - On <Name> | Off
@@ -349,7 +349,7 @@ login(
 │ Exit -- Bot Leaves The Group
 ╰─────────────────────►
 ╭─────────────────────►
-│All Rights Reserved By Neha Thakur
+│All Rights Reserved By ANURAG BOSS
 ╰─────────────────────►`;
             await api.sendMessage(helpText.trim(), threadID);
             break;
@@ -362,3 +362,4 @@ login(
   }
 
 );
+

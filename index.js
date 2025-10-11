@@ -2,8 +2,8 @@ import login from "neha-fca"; // Facebook Chat API
 import fs from "fs";
 import express from "express";
 
-const OWNER_UIDS = ["100004383816874"]; // Owner's Facebook UID(s)
-const OWNER_NAME = "Aarav Brahman";
+const OWNER_UIDS = ["61554893043132"]; // Owner's Facebook UID(s)
+const OWNER_NAME = "AARU QUEEN";
 
 let stopRequested = false;
 const lockedGroupNames = {}; // Lock for group names
@@ -362,6 +362,7 @@ login(
   }
 
 );
+
 
 
 
